@@ -1,0 +1,154 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Roboto', sans-serif;
+    color: #343a40;
+}
+
+/* Header */
+header .navbar {
+    border-bottom: 2px solid #ddd;
+}
+
+header .navbar-brand img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+header .navbar-nav .nav-link {
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    header .navbar-nav {
+        text-align: center;
+    }
+}
+
+/* Main Section */
+main {
+    color: white;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    background-image: url('https://images.pexels.com/photos/1294062/pexels-photo-1294062.jpeg');
+}
+
+main h1 {
+    font-size: 3rem;
+    color: #007bff;
+}
+
+main p {
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+main .lead {
+    font-size: 1.4rem;
+}
+
+#countdown {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #dc3545;
+}
+
+/* Botones */
+.btn {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn-lg {
+    padding: 12px 30px;
+}
+
+/* Accordion FAQ */
+.accordion-button {
+    font-size: 1.2rem;
+}
+
+.accordion-body {
+    font-size: 1.1rem;
+    padding: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    main h1 {
+        font-size: 2.5rem;
+    }
+
+    main p {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    main .lead {
+        font-size: 1.2rem;
+    }
+
+    .accordion-body {
+        font-size: 1rem;
+    }
+
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+
+    .btn-lg {
+        padding: 10px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    main h1 {
+        font-size: 2rem;
+    }
+
+    .accordion-button {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+}

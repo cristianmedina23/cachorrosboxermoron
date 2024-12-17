@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cachorros Boxer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Incluir Bootstrap desde CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+
+   
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8ARyl8_Opu--kMEGDtiSae1losp5SPTIiRUAH42Zk2qDq4E8zIOx4L1c6b_u0Br0ufCs&usqp=CAU"
+                         alt="Cachorros Boxer Logo"
+                         style="height: 50px; width: 50px; margin-right: 10px; border-radius: 50%; object-fit: cover;">
+                    <span class="fw-bold">CachorrosBoxer.Morón</span>
+                </a>
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/img/Lio.mp4" target="_blank" rel="noopener noreferrer">Lio Padre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/img/Nieve.mp4" target="_blank" rel="noopener noreferrer">Nieve Madre</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid d-flex flex-column justify-content-center align-items-center text-center p-4" 
+    style="background-image: url('https://images.pexels.com/photos/1294062/pexels-photo-1294062.jpeg');
+           background-size: cover; background-position: center; min-height: 100vh; color: white;">
+
+<!-- Título principal -->
+<h1 class="display-3 fw-bold text-primary mb-3">¡Regala un Cachorro Boxer esta Navidad!</h1>
+<p class="lead mb-2">¡La Navidad es el momento perfecto para darle un hogar lleno de amor a un cachorrito!</p>
+<p class="text-light mb-4">Quedan pocos días para que nuestros cachorros estén listos para unirse a tu familia. ¡Adopta un Boxer saludable y lleno de energía y haz que estas fiestas sean aún más especiales!</p>
+
+
+<!-- Contador -->
+<h2 id="countdown" class="text-danger fw-bold mb-4"></h2>
+
+<!-- Información sobre la raza -->
+<section class="text-center mb-5">
+  <h3 class="mb-3">Aprende más sobre la raza Boxer:</h3>
+  <ul class="list-unstyled d-flex justify-content-center gap-3">
+    <li>
+      <a href="https://www.expertoanimal.com/razas-de-perros/boxer.html" 
+         target="_blank" 
+         class="btn btn-outline-primary btn-sm">
+        Experto Animal
+      </a>
+    </li>
+    <li>
+      <a href="https://perritos.org/boxer" 
+         target="_blank" 
+         class="btn btn-outline-secondary btn-sm">
+        Perritos.org Club
+      </a>
+    </li>
+  </ul>
+</section>
+
+<!-- Video -->
+<section class="mb-5">
+  <h4 class="mb-3">¡Mira a estos cachorros Boxer en acción!</h4>
+  <div class="ratio ratio-16x9 shadow-lg rounded">
+    <iframe src="https://www.youtube.com/embed/Cyivv9zqjSI" 
+            title="Cachorros Boxer en acción" 
+            allowfullscreen></iframe>
+  </div>
+</section>
+
+<!-- Contacto -->
+<section class="text-center">
+  <h4 class="mb-4">Contacta con nosotros para más información:</h4>
+  <div class="d-flex justify-content-center gap-3">
+    <a href="https://wa.me/1136938447" 
+       target="_blank" 
+       class="btn btn-success btn-lg">
+      WhatsApp
+    </a>
+    <a href="https://articulo.mercadolibre.com.ar/MLA-1464187789-hermosos-cachorros-boxer-puros-disponibles-ya-_JM" 
+       target="_blank" 
+       class="btn btn-warning btn-lg">
+      Mercado Libre
+    </a>
+  </div>
+</section>
+</main>
+
+    <!-- Sección de Preguntas Frecuentes -->
+<div class="container my-5">
+    <h2 class="text-center mb-4">Preguntas Frecuentes</h2>
+    <div class="accordion" id="faqAccordion">
+        <!-- Pregunta 1 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                    ¿Están vacunados los cachorros?
+                </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Sí, todos nuestros cachorros están vacunados y desparasitados. Contamos con un control veterinario estricto para garantizar su salud.
+                </div>
+            </div>
+        </div>
+        <!-- Pregunta 2 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                    ¿Dónde estamos ubicados?
+                </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Estamos en Morón, provincia de Buenos Aires. La ubicación exacta será compartida al concretar la visita.
+                </div>
+            </div>
+        </div>
+        <!-- Pregunta 3 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                    ¿Qué alimento están consumiendo?
+                </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Los cachorros están siendo alimentados con alimento balanceado premium especial para cachorros, recomendado por veterinarios.
+                </div>
+            </div>
+        </div>
+        <!-- Pregunta 4 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                    ¿Qué incluye la entrega del cachorro?
+                </button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    La entrega incluye el carnet de vacunación.
+                </div>
+            </div>
+        </div>
+        <!-- Pregunta 5 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading5">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                    ¿Puedo financiar la compra o acceder a un descuento?
+                </button>
+            </h2>
+            <div id="faq5" class="accordion-collapse collapse" aria-labelledby="faqHeading5" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    Sí, puedes financiar tu compra a través de Mercado Libre. Si prefieres realizar la compra directa desde nuestro contacto de WhatsApp, puedes acceder a un descuento especial abonando en un solo pago.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <footer class="text-center py-3 mt-5 border-top">
+        <p>&copy; 2024 Cachorros Boxer Landing</p>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/countdown.js"></script>
+</body>
+</html>
